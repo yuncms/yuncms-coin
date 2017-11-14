@@ -6,6 +6,7 @@
  */
 
 namespace yuncms\coin\frontend;
+
 /**
  * Class Module
  * @package yuncms\coin\frontend
