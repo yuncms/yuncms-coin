@@ -26,9 +26,9 @@ use yuncms\payment\models\Payment;
 class Recharge extends ActiveRecord
 {
     //交易状态
-    const STATE_NOT_PAY = 0;//未支付
-    const STATE_SUCCESS = 1;//支付成功
-    const STATE_FAILED = 2;//支付失败
+    const STATE_NOT_PAY = 0b0;//未支付
+    const STATE_SUCCESS = 0b1;//支付成功
+    const STATE_FAILED = 0b10;//支付失败
 
     /**
      * @inheritdoc
