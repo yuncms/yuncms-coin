@@ -20,6 +20,8 @@ use yii\behaviors\TimestampBehavior;
  * @property double $amount
  * @property integer $created_at
  * @property string $action
+ *
+ * @property-read string $actionText
  */
 class Coin extends ActiveRecord
 {
@@ -57,6 +59,15 @@ class Coin extends ActiveRecord
             'coins' => Yii::t('coin', 'Amount of the transaction'),
             'created_at' => Yii::t('coin', 'Transaction Hour'),
         ];
+    }
+
+    /**
+     * @inheritdoc
+     * @return CoinQuery the active query used by this AR class.
+     */
+    public static function find()
+    {
+        return new CoinQuery(get_called_class());
     }
 
     /**

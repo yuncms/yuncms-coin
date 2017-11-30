@@ -1,15 +1,20 @@
 <?php
+/**
+ * @link http://www.tintsoft.com/
+ * @copyright Copyright (c) 2012 TintSoft Technology Co. Ltd.
+ * @license http://www.tintsoft.com/license/
+ */
 
 namespace yuncms\coin\models;
 
 use yii\db\ActiveQuery;
 
 /**
- * This is the ActiveQuery class for [[Recharge]].
+ * This is the ActiveQuery class for [[Coin]].
  *
- * @see Recharge
+ * @see CoinQuery
  */
-class RechargeQuery extends ActiveQuery
+class CoinQuery extends ActiveQuery
 {
     /*public function active()
     {
